@@ -8,7 +8,7 @@ Express.js is used for routing, with a MongoDB database, and the Mongoose ODM. I
 
 ### Links
 Github Repo: https://github.com/miss-heather/socialnetworkapi
-Video URL: https://drive.google.com/uc?id=16LYhkl8iylp3GS_t8tD5kIttB7nMOn1L&export=download 
+Video URL: https://drive.google.com/file/d/1Byd67JuVE-MuRUiQaHEE3IcEK2zLiMtr/view 
 
 ### License
 MIT Copyright (c) 2023 miss-heather

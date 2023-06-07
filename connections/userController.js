@@ -54,12 +54,12 @@ module.exports = {
   },
 
   // Add an assignment to a student
-  addFreind(req, res) {
-    console.log('You are adding an freind');
+  addFriend(req, res) {
+    console.log('You are adding an friend');
     console.log(req.body);
     User.findOneAndUpdate(
       { _id: req.params.userId },
-      { $addToSet: { freinds: req.body } },
+      { $addToSet: { friends: req.params.friendId } },
       { runValidators: true, new: true }
     )
       .then((user) =>
@@ -72,10 +72,10 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
   // Remove assignment from a student
-  removeFreind(req, res) {
+  removeFriend(req, res) {
     User.findOneAndUpdate(
       { _id: req.params.userId },
-      { $pull: { freind: { freindId: req.params.freindId } } },
+      { $pull: { friends: req.params.friendId } },
       { runValidators: true, new: true }
     )
       .then((user) =>
